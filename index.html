@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>compund interest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="radioA" name="variables" checked>
+  <label for="radioA" id="variable">A</label>
+  <input type="radio" id="radioP" name="variables">
+  <label for="radioP">P</label>
+  <input type="radio" id="radioR" name="variables">
+  <label for="radioR">R</label>
+  <input type="radio" id="radiot" name="variables">
+  <label for="radiot">t</label><br><br>
+  <!-- end radio -->
+
+  <label for="p" id="variable1">Enter the initial investment</label>
+  <input type="number" name='initial investment' id="v1"><br><br>
+  <label for="r" id="variable2">Enter the interest rate</label>
+  <input type="number" name='interest rate' id="v2"><br><br>
+  <label for="t" id="variable3">How many years do you want to keep your investment?</label>
+  <input type="number" name='years' id="v3"><br><br>
+  <label for="n">Enter the times per year that interest will be compounded</label>
+  <select name="Compound Frequency" id="n">
+    <option value="annually">Annually</option>
+    <option value="semiannually">Semiannually</option>
+    <option value="quarterly">Quarterly</option>
+    <option value="monthly">Monthly</option>
+    <option value="weekly">Weekly</option>
+    <option value="daily">Daily</option>
+  </select><br><br>
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
